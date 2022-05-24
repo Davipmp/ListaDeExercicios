@@ -27,23 +27,19 @@ public class enel {
         
         System.out.println("Digite o valor de consumo em kWh: ");
         valor = input.nextDouble();
-        
+     
         resultado1 = (valor*0.20);
         resultado2 = (valor*0.25);
         resultado3 = (valor*0.30);
         
-        if (valor<59.5){
-            System.out.println("O valor minimo de consumo custara R$11,90. ");
+        if (valor<150){
+            System.out.println("O valor minimo de consumo custara:  " + resultado1);
         }else{
-            if (valor<150){
-                System.out.println("Seu valor a ser pago e R$: " + resultado1);
+            if (valor >= 150  && valor <500){
+                System.out.println("Seu valor a ser pago e R$: " + resultado2);
             }else{
                 if (valor>=500){
                     System.out.println("Seu valor a ser pago e R$: " + resultado3);
-                }else{
-                    if (valor>=150 || valor<500){
-                        System.out.println("Seu valor a ser pago e R$: " + resultado2);
-                    }
                 }
             }
         }

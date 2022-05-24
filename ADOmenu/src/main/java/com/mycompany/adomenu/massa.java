@@ -35,14 +35,17 @@ public class massa {
         massa = (peso/altura);
         
         
-        if (massa<26) {
-            System.out.println("Grau de Obesidade >Normal<!! \n" + massa);
+        if (massa<18.50) {
+            System.out.println("Você apresenta estar com Magreza e o resultado do seu IMC é: " + massa);
         }else{
-            if (massa>26 || massa<30){
-                System.out.println("Grau de >OBESO< ! \n" + massa);
+            if (massa>18.50 || massa<24.90){
+                System.out.println("Você apresenta estar Normal e o resultado do seu IMC  :" + massa);
             }else {
-                if (massa>30){
-                    System.out.println("Grau de >OBESIDADE< \n " + massa);
+                if (massa>24.90 || massa < 30 ){
+                    System.out.println("Você apresenta estar com Magreza e o resultado do seu IMC é: " + massa);
+                }else {
+                    System.out.println("Você apresenta estar com Magreza e o resultado do seu IMC é: ");
+                    
                 }
             }
         }

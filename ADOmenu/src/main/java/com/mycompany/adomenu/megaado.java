@@ -29,12 +29,12 @@ public class megaado {
         if (disponibilidade.equals("Sim") || disponibilidade.equals("sim") || disponibilidade.equals("SIM")) {
             System.out.println("Tenho orçamento para esta viagem? \nDigite o valor do seu orçamento.");
             orcamento = dev.nextInt();
-            if (orcamento >= 1500) {
+            if (orcamento >= 2000) {
                 System.out.println("Quais são as condições climáticas? Digita a temperatura para FDS:");
                 clima = dev.nextInt();
             }
         }
-        if (clima >= 23) {
+        if (clima >= 25) {
             System.out.println("A viagem será de Carro ou de Onibus? [1] CARRO PRÓPRIO e [2] para )ONIBUS.");
             transporte = dev.nextInt();
             if (transporte == 1) {

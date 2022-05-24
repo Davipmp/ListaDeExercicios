@@ -44,17 +44,18 @@ public class teste {
                 if (disponibilidade.equals("Sim") || disponibilidade.equals("sim") || disponibilidade.equals("SIM")) {
                     System.out.println("Tenho orçamento para esta viagem? \nDigite o valor do seu orçamento.");
                     orcamento = dev.nextInt();
-                    if (orcamento >= 1500) {
+                    if (orcamento >= 2000) {
                         System.out.println("Quais são as condições climáticas? Digita a temperatura para FDS:");
                         clima = dev.nextInt();
                     }
                 }
-                if (clima >= 23) {
+                if (clima >= 25) {
                     System.out.println("A viagem será de Carro ou de Onibus? [1] CARRO PRÓPRIO e [2] para )ONIBUS.");
                     transporte = dev.nextInt();
                     if (transporte == 1) {
                         System.out.println("Verificar condições do carro e abastecer");
                         System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
+                        break;
                     } else {
                         System.out.println("Verificar a disponibilidade do onibus para ir viajar.");
                         System.out.println("Boa viagem, aproveite bem o seu final de semana!!!");
@@ -104,15 +105,15 @@ public class teste {
 
                 massa = (peso / altura);
 
-                if (massa < 26) {
-                    System.out.println("Grau de Obesidade >Normal<!! \n" + massa);
+                if (massa < 18.50) {
+                    System.out.println("Você apresenta estar com Magreza e o resultado do seu IMC é: " + massa);
                     break;
                 } else {
-                    if (massa > 26 || massa < 30) {
+                    if (massa>18.50 && massa<24.90) {
                         System.out.println("Grau de >OBESO< ! \n" + massa);
                         break;
                     } else {
-                        if (massa > 30) {
+                        if (massa>24.90 && massa < 30) {
                             System.out.println("Grau de >OBESIDADE< \n " + massa);
                             break;
                         }
@@ -135,22 +136,17 @@ public class teste {
                 resultado2 = (valor * 0.25);
                 resultado3 = (valor * 0.30);
 
-                if (valor < 59.5) {
-                    System.out.println("O valor minimo de consumo custara R$11,90. ");
+                if (valor < 150) {
+                    System.out.println("O valor minimo de consumo custara:  " + resultado1);
                     break;
                 } else {
-                    if (valor < 150) {
-                        System.out.println("Seu valor a ser pago e R$: " + resultado1);
+                    if (valor >= 150  && valor <500) {
+                        System.out.println("Seu valor a ser pago e R$: " + resultado2);
                         break;
                     } else {
                         if (valor >= 500) {
                             System.out.println("Seu valor a ser pago e R$: " + resultado3);
                             break;
-                        } else {
-                            if (valor >= 150 || valor < 500) {
-                                System.out.println("Seu valor a ser pago e R$: " + resultado2);
-                                break;
-                            }
                         }
                     }
                 }
@@ -180,7 +176,10 @@ public class teste {
 
             }
             case 6: {
-                System.out.println("DAVI, desenvolveu os exercicios da mega ADO ");
+                System.out.println("Integrantes do Grupo 6 "
+                        + "Davi José Perez Martins Pereira"
+                        + "Levy Paz"
+                        + "Gustavo Mendes  ");
                 break;
             }
             case 7: {
